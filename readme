@@ -1,0 +1,57 @@
+# Website Tin Tức
+
+## Giới Thiệu
+
+Đây là một dự án website tin tức cho phép người dùng xem các bài viết, đăng ký tài khoản, đăng nhập, bình luận vào các bài viết và quản lý nội dung bài viết. Website cũng có các tính năng quản lý bài viết và người dùng dành cho các quản trị viên.
+
+## Các Tính Năng Chính
+
+- Đăng ký và đăng nhập người dùng.
+- Quản lý bài viết (đăng bài, chỉnh sửa, xoá).
+- Bình luận bài viết.
+- Phân loại bài viết theo các danh mục.
+- Phân quyền người dùng (Admin, Editor, User).
+
+## Các Công Nghệ Sử Dụng
+
+- **Frontend:** HTML, CSS, JavaScript, Bootstrap, jQuery
+- **Backend:** PHP
+- **Cơ Sở Dữ Liệu:** MySQL
+- **Web Server:** Apache
+
+## Cài Đặt Môi Trường
+
+1. **Cài Đặt XAMPP/WAMP (hoặc Môi Trường PHP Server khác):**
+   - Tải và cài đặt XAMPP từ [tại đây](https://www.apachefriends.org/index.html) (hoặc WAMP).
+   - Khởi động Apache và MySQL trong XAMPP/WAMP.
+
+2. **Tạo Cơ Sở Dữ Liệu:**
+   - Mở phpMyAdmin (thường truy cập qua http://localhost/phpmyadmin).
+   - Tạo một cơ sở dữ liệu mới, ví dụ: `news_website`.
+   - Import file SQL vào cơ sở dữ liệu của bạn (có thể là file `database.sql` nếu bạn có).
+
+3. **Cài Đặt Dự Án:**
+   - Clone hoặc tải về mã nguồn của dự án từ repository GitHub của bạn.
+   - Đặt toàn bộ thư mục dự án vào thư mục `htdocs` của XAMPP (hoặc thư mục tương tự trong môi trường WAMP).
+   
+4. **Cấu Hình Cơ Sở Dữ Liệu:**
+   - Mở file cấu hình PHP (ví dụ: `config.php` hoặc `db_config.php`) và cấu hình các thông tin kết nối cơ sở dữ liệu như sau:
+     ```php
+     define('DB_HOST', 'localhost');
+     define('DB_USER', 'root');  // Tên người dùng MySQL, mặc định là 'root'
+     define('DB_PASSWORD', '');  // Mật khẩu MySQL, nếu có thì nhập vào
+     define('DB_NAME', 'news_website');  // Tên cơ sở dữ liệu
+     ```
+
+## Chạy Dự Án
+
+1. **Khởi Động Web Server:**
+   - Mở Apache và MySQL từ XAMPP/WAMP.
+   - Truy cập vào trang web của bạn qua trình duyệt tại địa chỉ: `http://localhost/tên_thư_mục_dự_án`.
+
+2. **Đăng Nhập và Quản Lý:**
+   - Nếu là người dùng mới, hãy đăng ký tài khoản.
+   - Nếu là quản trị viên, hãy đăng nhập với thông tin tài khoản admin của bạn.
+
+
+

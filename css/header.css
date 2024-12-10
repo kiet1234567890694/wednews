@@ -1,0 +1,80 @@
+:root {
+    --main-color: #333;
+    --secondary-color: #666;
+    --border-color: #ddd;
+    --background-color: #f8f8f8;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header, .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header {
+    background-color: white;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--main-color);
+}
+
+.date {
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 14px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    background-color: var(--background-color);
+}
+
+.nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 14px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .header, .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu a {
+        margin: 10px 0;
+    }
+}

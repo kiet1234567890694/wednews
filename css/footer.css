@@ -1,0 +1,125 @@
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-top: 1px solid #eaeaea;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between; /* Sắp xếp các phần footer ngang */
+    flex-wrap: wrap; /* Cho phép các phần tự động xuống hàng trên màn hình nhỏ */
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 250px; /* Đảm bảo các phần có chiều rộng tối thiểu */
+}
+
+.footer a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #B52759;
+    text-decoration: underline;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Canh trái nội dung */
+}
+
+.footer-left img {
+    width: 150px; /* Kích thước cố định cho ảnh */
+    height: auto;
+    margin-bottom: 15px; /* Khoảng cách dưới ảnh */
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer p:last-child {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #999;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #eaeaea;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #B52759;
+}
+
+.links {
+    margin-top: 10px;
+}
+
+.links a {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.links a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Sắp xếp theo chiều dọc khi màn hình nhỏ */
+        text-align: center;
+    }
+    
+    .footer-section {
+        padding: 20px;
+    }
+
+    .footer-left img {
+        margin: 0 auto 15px; /* Căn giữa ảnh trên màn hình nhỏ */
+    }
+
+    .footer p, .footer a {
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center; /* Căn giữa các biểu tượng mạng xã hội */
+    }
+}
